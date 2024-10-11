@@ -151,10 +151,15 @@ body{
     padding: 1.6em 3.5em;
 
 }
+
 .button:hover{
     background-color: var(--green-color);
 }
-
+.button--main:hover {
+    background-color: transparent;
+    border: 1.5px solid var(--green-color);
+    
+ }
 .submenu{
     --anim-menu-btn-color: var(--grey-color);
     --anim-menu-btn-gap: .195em;
@@ -236,3 +241,17 @@ body{
 .logo, .main-menu, .button, .submenu{
     pointer-events: auto;
 }
+
+@media(max-width: 767px){
+    .main-menu{
+        display: none;
+    }
+
+    .logo img {
+        width: 10em;
+    }
+    .button--top{
+        display: none;
+    }
+}
+   
